@@ -2,3 +2,6 @@
 	gpgsign = true
 [init]
 	defaultBranch = main
+[user]
+	name = trjohnson19
+	email = 77356759+trjohnson19@users.noreply.github.com
