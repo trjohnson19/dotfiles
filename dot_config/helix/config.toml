@@ -1,0 +1,7 @@
+theme = "base16_default_dark"
+
+[editor.whitespace]
+render = "all"
+
+[editor.soft-wrap]
+enable = true

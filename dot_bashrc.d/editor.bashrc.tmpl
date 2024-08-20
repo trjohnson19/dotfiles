@@ -1,0 +1,4 @@
+{{ if eq .chezmoi.os "linux" -}}
+EDITOR="$(command -v hx || command -v vim || command -v vi)"
+{{- end }}
+VISUAL="${EDITOR}"
