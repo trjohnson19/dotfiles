@@ -1,0 +1,32 @@
+---
+# Doc: https://github.com/redhat-plumbers-in-action/differential-shellcheck
+
+name: Differential ShellCheck
+
+on: # yamllint disable-line rule:truthy
+  push: null
+  pull_request: null
+
+permissions:
+  contents: read
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+
+    permissions:
+      security-events: write
+
+    steps:
+      - name: Repository checkout
+        # yamllint disable-line rule:line-length
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # @v4.2.2
+        with:
+          fetch-depth: 0
+
+      - name: Differential ShellCheck
+        # yamllint disable-line rule:line-length
+        uses: redhat-plumbers-in-action/differential-shellcheck@cc6721c45a8800cc666de45493545a07a638d121 #@v5.4.0
+        with:
+          severity: warning
+          token: ${{ secrets.GITHUB_TOKEN }}
