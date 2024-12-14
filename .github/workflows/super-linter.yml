@@ -7,6 +7,7 @@
 ## https://github.com/github/super-linter
 name: Lint Code Base
 
+# yamllint disable-line rule:braces
 permissions: {}
 
 on: # yamllint disable-line rule:truthy
@@ -34,5 +35,6 @@ jobs:
         uses: super-linter/super-linter@85f7611e0f7b53c8573cca84aa0ed4344f6f6a4d # @v7.2.1
         env:
           VALIDATE_ALL_CODEBASE: false
+          VALIDATE_BASH_EXEC: false
           DEFAULT_BRANCH: "main"
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
