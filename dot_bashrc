@@ -1,14 +1,15 @@
+#!/bin/bash
 # .bashrc
 
 # Source global definitions
-if [ -f /etc/bashrc ]; then
+if [[ -f /etc/bashrc ]]; then
+	# shellcheck source=/dev/null
 	. /etc/bashrc
 fi
 
 # User specific environment
-if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]
-then
-    PATH="$HOME/.local/bin:$HOME/bin:$PATH"
+if ! [[ "${PATH}" == "${HOME}/.local/bin:${HOME}/bin:"* ]]; then
+    PATH="${HOME}/.local/bin:${HOME}/bin:${PATH}"
 fi
 export PATH
 
@@ -16,20 +17,22 @@ export PATH
 # export SYSTEMD_PAGER=
 
 # User specific aliases and functions
-if [ -d ~/.bashrc.d ]; then
+if [[ -d ~/.bashrc.d ]]; then
 	for rc in ~/.bashrc.d/*; do
-		if [ -f "$rc" ]; then
-			. "$rc"
+		if [[ -f "${rc}" ]]; then
+			# shellcheck source=/dev/null
+			. "${rc}"
 		fi
 	done
 fi
 unset rc
 
 # User specific aliases
-if [ -d ~/.bash_aliases.d ]; then
+if [[ -d ~/.bash_aliases.d ]]; then
 	for alias in ~/.bash_aliases.d/*; do
-		if [ -f "$alias" ]; then
-			. "$alias"
+		if [[ -f "${alias}" ]]; then
+			# shellcheck source=/dev/null
+			. "${alias}"
 		fi
 	done
 fi

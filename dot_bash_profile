@@ -1,7 +1,9 @@
+#!/bin/bash
 # .bash_profile
 
 # Get the aliases and functions
-if [ -f ~/.bashrc ]; then
+if [[ -f ~/.bashrc ]]; then
+	# shellcheck source=/dev/null
 	. ~/.bashrc
 fi
 
