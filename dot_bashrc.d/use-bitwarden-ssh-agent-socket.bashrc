@@ -6,7 +6,7 @@
 SOCKET_PATH_BASE="${HOME}/.bitwarden-ssh-agent.sock"
 SOCKET_PATH_FLATPAK="${HOME}/.var/app/com.bitwarden.desktop/data/.bitwarden-ssh-agent.sock"
 
-log () {
+log() {
 	echo "[$(date +'%Y-%m-%dT%H:%M:%S%z') (${BASH_SOURCE[0]})]: $*"
 }
 
