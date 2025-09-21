@@ -1,4 +1,4 @@
-# For configurations in dot_ssh/config.d
+# For configurations in `dot_ssh/`
 [[language]]
 name = "sshclientconfig"
 file-types = [
