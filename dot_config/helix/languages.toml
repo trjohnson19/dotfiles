@@ -1,0 +1,8 @@
+# For configurations in dot_ssh/config.d
+[[language]]
+name = "sshclientconfig"
+file-types = [
+  "sshclientconfig",
+  { glob = ".ssh/config" },
+  { glob = "dot_ssh/config" },
+  ]
