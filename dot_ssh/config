@@ -1,0 +1,7 @@
+# All individual server configurations should be placed as individual config
+# files within `config.d/`. Config files should be suffixed with
+# `.sshclientconfig` so the appropriate language server can be used.
+Include ./config.d/*
+
+# Personal preference, but I like to see the visual host keys
+VisualHostKey yes
