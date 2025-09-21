@@ -5,4 +5,4 @@ file-types = [
   "sshclientconfig",
   { glob = ".ssh/config" },
   { glob = "dot_ssh/config" },
-  ]
+]
