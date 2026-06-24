@@ -1,10 +1,23 @@
 [commit]
 	gpgsign = true
-[init]
-	defaultBranch = main
-[user]
-	name = trjohnson19
-	email = 77356759+trjohnson19@users.noreply.github.com
-	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBk4Rrxw8Ab9rqBglyGp1NQTBwaZ1otzFPBnMvrS2FGc trjohnson19@github.com
+
 [gpg]
 	format = ssh
+
+[init]
+	defaultBranch = main
+
+[user]
+	useConfigOnly = true
+
+[includeIf "hasconfig:remote.*.url:ssh://github.com/**"]
+	path = config-github
+
+[includeIf "hasconfig:remote.*.url:https://github.com/**"]
+	path = config-github
+
+[includeIf "hasconfig:remote.*.url:ssh://gitlab.com/**"]
+	path = config-gitlab
+
+[includeIf "hasconfig:remote.*.url:https://gitlab.com/**"]
+	path = config-gitlab

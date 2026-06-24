@@ -1,0 +1,4 @@
+[user]
+	name = trjohnson19
+	email = 38240500-trjohnson19@users.noreply.gitlab.com
+	signingkey = key::ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFMIgtndvoj9azmH5TD45UIuungCmMa/+YD2G4ra4V2K trjohnson19@bitwarden_ssh_key-gitlab-signing
