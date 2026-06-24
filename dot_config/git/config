@@ -1,0 +1,23 @@
+[commit]
+	gpgsign = true
+
+[gpg]
+	format = ssh
+
+[init]
+	defaultBranch = main
+
+[user]
+	useConfigOnly = true
+
+[includeIf "hasconfig:remote.*.url:ssh://github.com/**"]
+	path = config-github
+
+[includeIf "hasconfig:remote.*.url:https://github.com/**"]
+	path = config-github
+
+[includeIf "hasconfig:remote.*.url:ssh://gitlab.com/**"]
+	path = config-gitlab
+
+[includeIf "hasconfig:remote.*.url:https://gitlab.com/**"]
+	path = config-gitlab
