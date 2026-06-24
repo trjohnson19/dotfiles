@@ -10,13 +10,13 @@
 [user]
 	useConfigOnly = true
 
-[includeIf "hasconfig:remote.*.url:ssh://github.com/**"]
+[includeIf "hasconfig:remote.*.url:git@github.com:*/**"]
 	path = config-github
 
 [includeIf "hasconfig:remote.*.url:https://github.com/**"]
 	path = config-github
 
-[includeIf "hasconfig:remote.*.url:ssh://gitlab.com/**"]
+[includeIf "hasconfig:remote.*.url:git@gitlab.com:*/**"]
 	path = config-gitlab
 
 [includeIf "hasconfig:remote.*.url:https://gitlab.com/**"]
