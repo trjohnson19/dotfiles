@@ -2,6 +2,7 @@
 	"git.enableCommitSigning": true,
 	"files.associations": {
 		"*.bashrc": "shellscript",
-		"*.bashrc.tmpl": "shellscript"
+		"*.bashrc.tmpl": "shellscript",
+		"*.toml.tmpl": "toml",
 	},
 }
