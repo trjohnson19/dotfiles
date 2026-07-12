@@ -1,0 +1,12 @@
+{{ if eq .chezmoi.os "linux" -}}
+{{- if lookPath "atuin" -}}
+enter_accept = false
+
+[dotfiles]
+enabled = false
+
+[logs]
+enabled = true
+dir = "${XDG_STATE_HOME}/atuin/logs"
+{{- end -}}
+{{- end }}
