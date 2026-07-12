@@ -1,7 +1,7 @@
 {
 	"git.enableCommitSigning": true,
 	"files.associations": {
-		"dot_bashrc.d/*.bashrc.tmpl": "shellscript",
-		"dot_bashrc.d/*.bashrc": "shellscript"
+		"*.bashrc": "shellscript",
+		"*.bashrc.tmpl": "shellscript"
 	},
 }
