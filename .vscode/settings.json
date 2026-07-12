@@ -1,0 +1,7 @@
+{
+	"git.enableCommitSigning": true,
+	"files.associations": {
+		"*.bashrc": "shellscript",
+		"*.bashrc.tmpl": "shellscript"
+	},
+}
