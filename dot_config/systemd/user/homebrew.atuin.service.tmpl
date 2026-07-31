@@ -1,4 +1,4 @@
-{{- if includeTemplate "check-linux-brew-atuin" . -}}
+{{- if (includeTemplate "check-linux-brew-atuin" . | fromJson) -}}
 {{- $brewPrefix := (includeTemplate "brew-prefix" .) -}}
 [Unit]
 Description=Homebrew generated unit for atuin

@@ -1,4 +1,4 @@
-{{- if includeTemplate "check-linux-brew" . -}}
+{{- if (includeTemplate "check-linux-brew" . | fromJson) -}}
     {{- $brewPrefix := (includeTemplate "brew-prefix" .) -}}
     {{- joinPath $brewPrefix "bin" -}}
 {{- end -}}

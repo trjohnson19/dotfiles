@@ -1,4 +1,5 @@
 #!/bin/bash
+
 # https://docs.brew.sh/Shell-Completion
 if type brew &>/dev/null; then
 	HOMEBREW_PREFIX="$(brew --prefix)"
