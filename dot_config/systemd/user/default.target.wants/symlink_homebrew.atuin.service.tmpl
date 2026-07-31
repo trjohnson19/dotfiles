@@ -1,3 +1,3 @@
-{{- if includeTemplate "check-linux-brew-atuin" . -}}
+{{- if (includeTemplate "check-linux-brew-atuin" . | fromJson) -}}
 {{- joinPath ".." "homebrew.atuin.service" }}
 {{- end -}}
