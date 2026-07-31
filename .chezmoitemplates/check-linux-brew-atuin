@@ -1,0 +1,7 @@
+{{- if includeTemplate "check-linux-brew" . -}}
+    {{- $brewPrefix := (includeTemplate "brew-prefix" .) -}}
+    {{- $brewBin := (includeTemplate "brew-bin" .) -}}
+    {{- if findExecutable "atuin" $brewBin -}}
+true
+    {{- end -}}
+{{- end -}}

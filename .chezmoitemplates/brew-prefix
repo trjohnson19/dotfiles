@@ -1,0 +1,3 @@
+{{- if includeTemplate "check-linux-brew" . -}}
+    {{- output "brew" "--prefix" | trim -}}
+{{- end -}}
