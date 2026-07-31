@@ -1,0 +1,15 @@
+{{- if includeTemplate "check-linux-brew-atuin" . -}}
+{{- $brewPrefix := (includeTemplate "brew-prefix" .) -}}
+[Unit]
+Description=Homebrew generated unit for atuin
+
+[Install]
+WantedBy=default.target
+
+[Service]
+Type=simple
+ExecStart={{ joinPath $brewPrefix "opt" "atuin" "bin" "atuin" }} daemon start
+Restart=on-failure
+StandardOutput=append:{{ joinPath $brewPrefix "var" "log" "atuin.log" }}
+StandardError=append:{{ joinPath $brewPrefix "var" "log" "atuin.log" }}
+{{- end -}}
