@@ -1,4 +1,4 @@
-#!/bin/sh
+# shellcheck shell=sh
 
 if [ "$(command -v eza)" ]; then
 	# shellcheck disable=SC2139

@@ -1,9 +1,9 @@
-#!/bin/bash
+# shellcheck shell=sh
 
 # Bluefin
 # shellcheck source=/dev/null
-test -f /usr/share/ublue-os/bling/bling.sh && source /usr/share/ublue-os/bling/bling.sh
+test -f /usr/share/ublue-os/bling/bling.sh && . /usr/share/ublue-os/bling/bling.sh
 
 # Bazzite
 # shellcheck source=/dev/null
-test -f /usr/share/bazzite-cli/bling.sh && source /usr/share/bazzite-cli/bling.sh
+test -f /usr/share/bazzite-cli/bling.sh && . /usr/share/bazzite-cli/bling.sh

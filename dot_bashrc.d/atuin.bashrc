@@ -4,6 +4,6 @@ shell=$(basename "$(readlink /proc/$$/exe)" 2>/dev/null || basename "${SHELL}")
 
 if [ "${shell}" = "bash" ]; then
 	if [ "$(command -v zoxide)" ]; then
-		eval "$(starship init bash)"
+		eval "$(atuin init bash)"
 	fi
 fi

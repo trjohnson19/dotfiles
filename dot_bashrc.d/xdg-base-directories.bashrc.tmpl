@@ -1,8 +1,11 @@
 {{- if (includeTemplate "check-linux" . | fromJson) -}}
-#!/bin/sh
-
-export XDG_CONFIG_HOME="${HOME}/.config"
-export XDG_CACHE_HOME="${HOME}/.cache"
-export XDG_DATA_HOME="${HOME}/.local/share"
-export XDG_STATE_HOME="${HOME}/.local/state"
+{{- include
+	(
+		joinPath
+		.chezmoi.sourceDir
+		".chezmoitemplates"
+		"dot_bashrc.d"
+		"xdg-base-directories.bashrc"
+	)
+-}}
 {{- end -}}

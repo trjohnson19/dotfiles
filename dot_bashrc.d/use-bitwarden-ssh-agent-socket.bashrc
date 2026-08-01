@@ -1,4 +1,4 @@
-#!/bin/bash
+# shellcheck shell=bash
 #
 # Mount the Bitwarden SSH-Agent socket (if it exists)
 

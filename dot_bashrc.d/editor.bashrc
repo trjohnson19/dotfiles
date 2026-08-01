@@ -1,4 +1,4 @@
-#!/bin/sh
+# shellcheck shell=sh
 # shellcheck disable=SC2034 # Exporting to the shell
 
 EDITOR="$(command -v hx || command -v vim || command -v vi)"

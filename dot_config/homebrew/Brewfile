@@ -4,7 +4,7 @@ tap "valkyrie00/bbrew", "https://github.com/Valkyrie00/homebrew-bbrew", trusted:
 
 ### Official formulae
 # Improved shell history for zsh, bash, fish and nushell
-brew "atuin", restart_service: always
+brew "atuin", restart_service: :always
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 # Manage your dotfiles across multiple diverse machines, securely
@@ -13,8 +13,12 @@ brew "chezmoi" unless system("command -v fzf &>/dev/null")
 brew "eza"
 # Command-line fuzzy finder written in Go
 brew "fzf" unless system("command -v fzf &>/dev/null")
+# Open source programming language to build simple/reliable/efficient software
+brew "go"
 # Post-modern modal text editor
 brew "helix"
+# Framework for managing multi-language pre-commit hooks
+brew "pre-commit"
 # Static analysis and lint tool, for (ba)sh scripts
 brew "shellcheck"
 # Cross-shell prompt for astronauts

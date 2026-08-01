@@ -1,4 +1,4 @@
-#!/bin/sh
+# shellcheck shell=sh
 
 if [ "$(command -v ug)" ]; then
 	# shellcheck disable=SC2139

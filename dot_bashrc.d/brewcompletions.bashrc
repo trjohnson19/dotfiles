@@ -1,4 +1,4 @@
-#!/bin/bash
+# shellcheck shell=bash
 
 # https://docs.brew.sh/Shell-Completion
 if type brew &>/dev/null; then

@@ -1,0 +1,11 @@
+{{- include
+	(
+		joinPath
+		.chezmoi.sourceDir
+		".chezmoitemplates"
+		"dot_config"
+		"atuin"
+		"config.toml"
+	)
+-}}
+dir = "{{ joinPath (env "HOME") ".local" "state" -}}/atuin/logs"
