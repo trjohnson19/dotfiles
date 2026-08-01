@@ -1,8 +1,14 @@
 {
 	"git.enableCommitSigning": true,
 	"files.associations": {
+		"*.bash_aliases": "shellscript",
+		"*.bash_aliases.tmpl": "shellscript",
+		"dot_bash_profile": "shellscript",
+		"dot_bashrc": "shellscript",
 		"*.bashrc": "shellscript",
 		"*.bashrc.tmpl": "shellscript",
-		"*.toml.tmpl": "toml",
+		"Brewfile.tmpl": "ruby",
+		"*.toml": "properties",
+		"*.toml.tmpl": "properties",
 	},
 }
