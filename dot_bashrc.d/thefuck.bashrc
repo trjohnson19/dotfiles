@@ -1,5 +1,5 @@
-#!/bin/bash
+#!/bin/sh
 
-if command -v thefuck &>/dev/null; then
+if [ "$(command -v thefuck)" ]; then
 	eval "$(thefuck --alias)"
 fi
