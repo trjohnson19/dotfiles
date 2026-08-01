@@ -1,0 +1,53 @@
+### Taps
+tap "ublue-os/tap", "https://github.com/ublue-os/homebrew-tap", trusted: true
+tap "valkyrie00/bbrew", "https://github.com/Valkyrie00/homebrew-bbrew", trusted: true
+
+### Official formulae
+# Improved shell history for zsh, bash, fish and nushell
+brew "atuin", restart_service: always
+# Clone of cat(1) with syntax highlighting and Git integration
+brew "bat"
+# Manage your dotfiles across multiple diverse machines, securely
+brew "chezmoi" unless system("command -v fzf &>/dev/null")
+# Modern, maintained replacement for ls
+brew "eza"
+# Command-line fuzzy finder written in Go
+brew "fzf" unless system("command -v fzf &>/dev/null")
+# Post-modern modal text editor
+brew "helix"
+# Static analysis and lint tool, for (ba)sh scripts
+brew "shellcheck"
+# Cross-shell prompt for astronauts
+brew "starship"
+# Very fast implementation of tldr in Rust
+brew "tealdeer"
+# General purpose fuzzy finder TUI
+brew "television"
+# Programmatically correct mistyped console commands
+brew "thefuck"
+# Command-line interface to the freedesktop.org trashcan
+brew "trash-cli"
+# Ultra fast grep with query UI, fuzzy search, archive search, and more
+brew "ugrep"
+# Shell extension to navigate your filesystem faster
+brew "zoxide"
+
+### Tapped formulae
+# Modern TUI for managing Homebrew packages and casks on macOS and Linux
+brew "valkyrie00/bbrew/bbrew"
+
+### Flatpak
+flatpak "com.bitwarden.desktop"
+flatpak "com.fastmail.Fastmail"
+flatpak "com.github.jeromerobert.pdfarranger"
+flatpak "com.github.tchx84.Flatseal"
+flatpak "com.nextcloud.desktopclient.nextcloud"
+flatpak "com.protonvpn.www"
+flatpak "com.ranfdev.DistroShelf"
+flatpak "io.github.flattool.Warehouse"
+flatpak "io.github.ungoogled_software.ungoogled_chromium"
+flatpak "it.mijorus.gearlever"
+flatpak "org.libreoffice.LibreOffice"
+flatpak "org.mozilla.firefox"
+flatpak "org.signal.Signal"
+flatpak "org.torproject.torbrowser-launcher"
