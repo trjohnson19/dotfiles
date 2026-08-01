@@ -1,11 +1,13 @@
 {{- if (includeTemplate "check-linux" . | fromJson) -}}
-{{ include
+{{- include
 	(
 		joinPath
 		.chezmoi.sourceDir
 		".chezmoitemplates"
-		"dot_bashrc.d"
-		"xdg-base-directories.bashrc"
+		"dot_config"
+		"atuin"
+		"config.toml"
 	)
-}}
+-}}
+dir = "{{ joinPath (env "HOME") ".local" "state" "atuin" "logs" }}"
 {{ end -}}

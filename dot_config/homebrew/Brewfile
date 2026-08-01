@@ -4,17 +4,19 @@ tap "valkyrie00/bbrew", "https://github.com/Valkyrie00/homebrew-bbrew", trusted:
 
 ### Official formulae
 # Improved shell history for zsh, bash, fish and nushell
-brew "atuin", restart_service: always
+brew "atuin", restart_service: :always
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 # Manage your dotfiles across multiple diverse machines, securely
-brew "chezmoi" unless system("command -v fzf &>/dev/null")
+brew "chezmoi" unless system("command -v chezmoi &>/dev/null")
 # Modern, maintained replacement for ls
 brew "eza"
 # Command-line fuzzy finder written in Go
 brew "fzf" unless system("command -v fzf &>/dev/null")
 # Post-modern modal text editor
 brew "helix"
+# Podman Terminal User Interface
+brew "podman-tui"
 # Static analysis and lint tool, for (ba)sh scripts
 brew "shellcheck"
 # Cross-shell prompt for astronauts
@@ -36,18 +38,37 @@ brew "zoxide"
 # Modern TUI for managing Homebrew packages and casks on macOS and Linux
 brew "valkyrie00/bbrew/bbrew"
 
+### Casks
+cask "font-0xproto-nerd-font"
+cask "font-blex-mono-nerd-font"
+cask "font-caskaydia-mono-nerd-font"
+cask "font-comic-shanns-mono-nerd-font"
+cask "font-droid-sans-mono-nerd-font"
+cask "font-fira-code-nerd-font"
+cask "font-go-mono-nerd-font"
+cask "font-jetbrains-mono-nerd-font"
+cask "font-sauce-code-pro-nerd-font"
+cask "font-source-code-pro"
+cask "font-ubuntu-nerd-font"
+
 ### Flatpak
 flatpak "com.bitwarden.desktop"
 flatpak "com.fastmail.Fastmail"
 flatpak "com.github.jeromerobert.pdfarranger"
 flatpak "com.github.tchx84.Flatseal"
+flatpak "com.google.Chrome"
 flatpak "com.nextcloud.desktopclient.nextcloud"
 flatpak "com.protonvpn.www"
 flatpak "com.ranfdev.DistroShelf"
 flatpak "io.github.flattool.Warehouse"
+flatpak "io.github.kolunmi.Bazaar"
 flatpak "io.github.ungoogled_software.ungoogled_chromium"
+flatpak "io.podman_desktop.PodmanDesktop"
 flatpak "it.mijorus.gearlever"
+flatpak "me.iepure.devtoolbox"
+flatpak "org.chromium.Chromium"
 flatpak "org.libreoffice.LibreOffice"
 flatpak "org.mozilla.firefox"
+flatpak "org.mozilla.thunderbird_esr"
 flatpak "org.signal.Signal"
 flatpak "org.torproject.torbrowser-launcher"
