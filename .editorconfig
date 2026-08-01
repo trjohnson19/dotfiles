@@ -8,6 +8,12 @@ root = true
 end_of_line = lf
 insert_final_newline = true
 
+[{*.bash_aliases,*.bash_aliases.tmpl}]
+indent_style = tab
+
+[{*.bashrc,*.bashrc.tmpl}]
+indent_style = tab
+
 # Allow tabs in JSON
 [*.json]
 indent_style = tab
