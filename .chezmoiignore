@@ -4,5 +4,6 @@
 .vim/**
 .vscode/
 .vscode/**
+Brewfile
 LICENSE
 README.md
