@@ -5,7 +5,7 @@
 		"*.toml": "properties",
 		"dot_bash_profile": "shellscript",
 		"dot_bashrc": "shellscript",
-		"Brewfile": "ruby",
+		"Brewfile": "ruby"
 	},
-	"git.enableCommitSigning": true,
+	"git.enableCommitSigning": true
 }
