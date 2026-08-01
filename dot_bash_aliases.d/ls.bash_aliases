@@ -2,7 +2,10 @@
 
 if [ "$(command -v eza)" ]; then
 	# shellcheck disable=SC2139
-	alias 'ls-no-eza'="$(unalias -a; command -v ls)" # Or use `\ls`
+	alias 'ls-no-eza'="$(
+		unalias -a
+		command -v ls
+	)" # Or use `\ls`
 
 	alias 'l.'='eza --treat-dirs-as-files .*'
 	alias 'l1'='eza --oneline'
